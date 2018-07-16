@@ -1,0 +1,97 @@
+.redux-container-switch {
+    .switch-options {
+        min-height: 30px;
+        margin-right: 10px;
+        transition: all 3s;
+        input {
+            display: none;
+        }
+    }
+    .cb-enable,
+    .cb-disable {
+        padding: 0;
+        height: 32px;
+        width:32px;
+        span {
+            height: 28px;
+            width: 28px;
+            margin: 1px;
+            text-indent: -9999px;
+            border-radius: 50%;
+            display: none;
+        }
+        &.selected {
+            span{
+                display: block;
+            }
+        }
+    }
+    .cb-enable.selected, .cb-disable:not(.selected){
+        background: #4AD361;
+        border:1px solid #4AD361;
+
+        span{
+            background: #fff;
+        }
+    }
+    .cb-disable.selected, .cb-enable:not(.selected){
+        background: #fff;
+        border:1px solid #ddd;
+        span{
+            background: #ddd;
+        }
+    }
+    .cb-enable {
+        border-right: 0;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        &.selected {
+            span{
+                 float: left;
+            }
+        }
+        &:not(.selected){
+            border-right: 0;
+        }
+    }
+
+    .cb-disable {
+        border-left: 0;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        &.selected {
+            border-left: 0;
+            color: #fff;
+            span{
+                 float: right;
+            }
+        }
+    }
+}
+.checkbox-container,.redux-container-checkbox{
+    input[type=radio],input[type=checkbox]{
+        height: 22px;
+        width: 22px;
+        min-width: 22px;
+        border-radius: 3px;
+        -webkit-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        &:checked{
+            border:1px solid #005e00;
+            outline: none;
+            box-shadow: none;
+            &:before{
+                content: "\f147" !important;
+                font-size: 34px;
+                background: transparent;
+                margin: 0;
+                width: auto;
+                height: auto;
+                text-indent: 0;
+                color: #005e00;
+                margin-top: -5px;
+                margin-left: -8px;
+            }
+        }
+    }
+} 
