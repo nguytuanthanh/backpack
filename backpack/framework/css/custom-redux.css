@@ -1,0 +1,74 @@
+.redux-container-switch .switch-options {
+  min-height: 30px;
+  margin-right: 10px;
+  transition: all 3s; }
+  .redux-container-switch .switch-options input {
+    display: none; }
+.redux-container-switch .cb-enable,
+.redux-container-switch .cb-disable {
+  padding: 0;
+  height: 32px;
+  width: 32px; }
+  .redux-container-switch .cb-enable span,
+  .redux-container-switch .cb-disable span {
+    height: 28px;
+    width: 28px;
+    margin: 1px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    display: none; }
+  .redux-container-switch .cb-enable.selected span,
+  .redux-container-switch .cb-disable.selected span {
+    display: block; }
+.redux-container-switch .cb-enable.selected, .redux-container-switch .cb-disable:not(.selected) {
+  background: #4AD361;
+  border: 1px solid #4AD361; }
+  .redux-container-switch .cb-enable.selected span, .redux-container-switch .cb-disable:not(.selected) span {
+    background: #fff; }
+.redux-container-switch .cb-disable.selected, .redux-container-switch .cb-enable:not(.selected) {
+  background: #fff;
+  border: 1px solid #ddd; }
+  .redux-container-switch .cb-disable.selected span, .redux-container-switch .cb-enable:not(.selected) span {
+    background: #ddd; }
+.redux-container-switch .cb-enable {
+  border-right: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px; }
+  .redux-container-switch .cb-enable.selected span {
+    float: left; }
+  .redux-container-switch .cb-enable:not(.selected) {
+    border-right: 0; }
+.redux-container-switch .cb-disable {
+  border-left: 0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; }
+  .redux-container-switch .cb-disable.selected {
+    border-left: 0;
+    color: #fff; }
+    .redux-container-switch .cb-disable.selected span {
+      float: right; }
+
+.checkbox-container input[type=radio], .checkbox-container input[type=checkbox], .redux-container-checkbox input[type=radio], .redux-container-checkbox input[type=checkbox] {
+  height: 22px;
+  width: 22px;
+  min-width: 22px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+  .checkbox-container input[type=radio]:checked, .checkbox-container input[type=checkbox]:checked, .redux-container-checkbox input[type=radio]:checked, .redux-container-checkbox input[type=checkbox]:checked {
+    border: 1px solid #005e00;
+    outline: none;
+    box-shadow: none; }
+    .checkbox-container input[type=radio]:checked:before, .checkbox-container input[type=checkbox]:checked:before, .redux-container-checkbox input[type=radio]:checked:before, .redux-container-checkbox input[type=checkbox]:checked:before {
+      content: "\f147" !important;
+      font-size: 34px;
+      background: transparent;
+      margin: 0;
+      width: auto;
+      height: auto;
+      text-indent: 0;
+      color: #005e00;
+      margin-top: -5px;
+      margin-left: -8px; }
+
+/*# sourceMappingURL=custom-redux.css.map */
